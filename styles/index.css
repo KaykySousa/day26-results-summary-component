@@ -1,0 +1,168 @@
+.wrapper {
+	min-height: 100vh;
+	min-width: 100vw;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	max-width: 680px;
+}
+
+.result-container {
+	width: 100%;
+	padding: 36px 64px;
+	border-radius: 0 0 32px 32px;
+	background: linear-gradient(#6743ff, #312cea);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.result-container__title {
+	color: white;
+	opacity: 70%;
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 24px;
+}
+
+.result-container__grade {
+	width: 144px;
+	height: 144px;
+	background: linear-gradient(#4a23ca, transparent);
+	border-radius: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.result-container__grade strong {
+	color: white;
+	font-size: 56px;
+	font-weight: 700;
+}
+
+.result-container__grade p {
+	color: white;
+	opacity: 50%;
+	font-weight: 600;
+	margin-top: 12px;
+}
+
+.result-container__result {
+	color: white;
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 16px;
+}
+
+.result-container__description {
+	color: white;
+	opacity: 60%;
+	line-height: 1.5;
+	font-weight: 600;
+	text-align: center;
+}
+
+.summary-container {
+	width: 100%;
+	padding: 32px;
+}
+
+.summary-container__title {
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 24px;
+}
+
+.summary-container__tests-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.test {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	column-gap: 12px;
+	border-radius: 8px;
+	padding: 16px;
+}
+
+.test-red {
+	color: #f87171;
+	background: #fef2f2;
+}
+
+.test-yellow {
+	color: #facc15;
+	background: #fefce8;
+}
+
+.test-green {
+	color: #22c55e;
+	background: #f0fdf4;
+}
+
+.test-blue {
+	color: #2563eb;
+	background: #eff6ff;
+}
+
+.test__title {
+	flex: 1;
+	font-weight: 600;
+}
+
+.test__grade {
+	font-weight: 600;
+	color: #737373;
+}
+
+.test__grade strong {
+	color: #292524;
+}
+
+.summary-container__button {
+	background: #1e293b;
+	width: 100%;
+	border-radius: 9999px;
+	height: 48px;
+	color: white;
+	font-weight: 600;
+	margin-top: 24px;
+}
+
+@media screen and (min-width: 640px) {
+	.wrapper {
+		justify-content: center;
+		align-items: center;
+		padding: 32px;
+	}
+
+	.container {
+		flex-direction: row;
+		box-shadow: 4px 8px 14px 2px rgb(0, 0, 0, 0.1);
+		border-radius: 32px;
+	}
+
+	.result-container {
+		width: 50%;
+		border-radius: 32px;
+	}
+
+	.summary-container {
+		width: 50%;
+	}
+}
